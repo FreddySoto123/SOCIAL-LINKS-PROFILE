@@ -1,0 +1,25 @@
+body{
+    
+}
+.contenido{
+
+}
+.imagen_log{
+
+}
+.item1{
+
+}
+.botones{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+}
+.botones_button{
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: yellow;
+    color: black;
+}
