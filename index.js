@@ -1,38 +1,39 @@
 const createCard = () => {
-    const cardContainer = document.createElement("div");
-    cardContainer.className = "card"; 
+    const contenedorCarta = document.createElement("div");
+    contenedorCarta.className = "card"; 
   
-    const profilePicture = document.createElement("img");
-    profilePicture.src = "./assets/images/avatar-jessica.jpeg";
-    profilePicture.className = "card-image"; 
+    const imagenCarta = document.createElement("img");
+    imagenCarta.src = "./assets/images/avatar-jessica.jpeg";
+    imagenCarta.className = "card-image"; 
   
-    const cardName = document.createElement("h2");
-    cardName.textContent = "Jessica Randall";
+    const nombreCarta = document.createElement("h2");
+    nombreCarta.textContent = "Jessica Randall";
   
-    const location = document.createElement("h4");
-    location.textContent = "London, United Kingdom";
+    const localizacion = document.createElement("h4");
+    localizacion.textContent = "London, United Kingdom";
   
     const bio = document.createElement("h5");
     bio.textContent = "Front-end developer and avid reader.";
   
-    const buttonsContainer = document.createElement("div");
-    buttonsContainer.className = "contenedor"; 
+    const contenedordeBoton = document.createElement("div");
+    contenedordeBoton.className = "contenedor"; 
   
     const socialLinks = ["GitHub", "Frontend Mentor", "LinkedIn", "Twitter", "Instagram"];
   
-    socialLinks.forEach((link) => {
+    socialLinks.forEach((link) => 
+    {
       const button = document.createElement("button");
       button.textContent = link;
-      buttonsContainer.appendChild(button);
+      contenedordeBoton.appendChild(button);
     });
   
-    cardContainer.appendChild(profilePicture);
-    cardContainer.appendChild(cardName);
-    cardContainer.appendChild(location);
-    cardContainer.appendChild(bio);
-    cardContainer.appendChild(buttonsContainer);
+    contenedorCarta.appendChild(imagenCarta);
+    contenedorCarta.appendChild(nombreCarta);
+    contenedorCarta.appendChild(localizacion);
+    contenedorCarta.appendChild(bio);
+    contenedorCarta.appendChild(contenedordeBoton);
   
-    return cardContainer;
+    return contenedorCarta;
   };
   
   const mountPoint = document.querySelector("#app"); 
